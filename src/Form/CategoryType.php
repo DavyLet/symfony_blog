@@ -22,11 +22,13 @@ class CategoryType extends AbstractType
                 TextType::class,
                 // tableau d'options
                 [
-                    // libéllé custom pour le champ de formulaire
+                    // libellé custom pour le champ de formulaire
                     'label' => 'Nom',
+                    // pour ajouter des attributs à la balise input
                     'attr' => [
                         'placeholder' => 'Nom de la catégorie'
                     ]
+
                 ]
             )
             ->add(
@@ -34,14 +36,12 @@ class CategoryType extends AbstractType
                 TextareaType::class,
                 [
                     'label' => 'Description',
-                    // par défaut, les champs de formulaire ont l'attribue required
+                    // par défaut, les champs de formulaire ont l'attribut required
                     'required' => false
                 ]
             )
         ;
     }
-
-
 
     public function configureOptions(OptionsResolver $resolver)
     {

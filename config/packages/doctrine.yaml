@@ -2,7 +2,7 @@ doctrine:
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
 
-        # pour passer de l'utf8mb4 par défaut à utf8 on ajoute ces 4 lignes:
+        # pour passer d'utf8mb4 par défaut à utf8
         charset: utf8
         default_table_options:
             charset: utf8
@@ -22,5 +22,3 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
-
-

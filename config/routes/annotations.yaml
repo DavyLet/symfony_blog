@@ -5,13 +5,10 @@ controllers:
 admin_controllers:
     resource: ../../src/Controller/Admin/
     type: annotation
-    # toute les url des routes définies dans src/Admin
+    # toutes les url des routes définies dans src/Controller/Admin
     # commencent par /admin
     prefix: /admin
 
 kernel:
     resource: ../../src/Kernel.php
     type: annotation
-
-
-
